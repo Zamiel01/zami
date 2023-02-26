@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    background-color: black;
+    background-size: cover;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: red;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.nav a:hover{
+    color: red;
+}
+.nav a.Active{
+    color: red;
+}
+p{
+    color: white;
+}
+section{
+    padding: 160px 15% 120px;
+}
+.Home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/istockphoto-1268759368-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+}
+.two{
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+}
+.home-text h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    color: white;
+    margin: 0 0 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+
+}
+.home-text p{
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+h1{
+    color: white;
+}
+h3{
+    color: white;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    background-color: red;
+    padding: 12px 28px ;
+    border-radius: 5px;
+    color: white;
+}
+.About h2{
+    color: white;
+    font-size: 60px;
+}
+.About{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    background-image: url(./images/star-wars-backgrounds-25.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.text{
+    line-height: 1.8;
+    font-size: 15px
+  
+}
+.main-text{
+    color: white;
+    text-align: center;
+}
+.main-text h2{
+    font-size: 40px;
+}
+.box1{
+    color: white;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url(./images/Glowing-Butterfly-Photo-Manipulation-in-Photoshop-S1Oj_XfAeGnmBM.jpg);
+    background-size: cover;
+    
+}
+.box1 h3{
+    font-size: 24px;
+}
+.box1:hover{
+  background-color: red;
+}
+.box2{
+    color: white;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 40%;
+    bottom: 190px;
+    background-image: url(./images/unnamed.jpg);
+    background-size: cover;
+}
+.box2 h3{
+    font-size: 24px;
+}
+.box2:hover{
+  background-color: red;
+}
+.box3{
+    color: white;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 80%;
+    bottom: 360px;
+    background-image: url(./images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg);
+    background-size: cover;
+}
+.box3 h3{
+    font-size: 24px;
+}
+.box3:hover{
+  background-color: red;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=number], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+  }
+ @media screen and (max-width: 425px) {
+.main-text{
+        font-size: 5px;
+}
+.box1{
+    position: absolute;
+    font-size: 10px;
+width: 300px;
+ 
+}
+.box1 h3{
+    font-size: 17px;
+}
+.box2{
+    position: relative;
+    font-size: 10px;
+width: 300px;
+top: 130px;
+left: 1px;
+ 
+}
+.box2 h3{
+    font-size: 17px;
+}
+.box3{
+    position: relative;
+    font-size: 10px;
+width: 300px;
+top: 150px;
+left: 1px;
+ 
+}
+.box3 h3{
+    font-size: 17px;
+}
+.img{
+    width: 160px;
+    border-radius: 60px;
+}
+.text{
+    font-size: 10px;
+}
+.text h2{
+    font-size: 40px;
+    line-height: normal;
+  
+}
+       .home-text{
+        font-size: 10px;
+       }
+       .text p{
+        line-height: normal;
+       }
+ .text a{
+    font-size: 10px;
+ }   
+ header{
+    padding: 12px 2.5%;
+    transition: .1s;
+ }  
+ .nav a{
+    font-size: 10px;
+    margin: 0 4px;
+    padding-right: 11px;
+ }
+ .main-text p{
+    font-size: 10px;
+ }
+}
+@media screen and (max-width: 320px){
+    .main-text{
+        align-items: center;
+        position: relative;
+        right: 22px;
+    }
+    .main-text h2{
+        font-size: 20px;
+    }
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+     }  
+     .nav a{
+        font-size: 10px;
+        margin: 0 4px;
+        padding-right: 15px;
+     }
+     .logo{
+        font-size: 30px;
+     }
+  .Home{
+    background-size: cover;
+   
+  }
+  .text h2{
+    font-size: 20px;
+  }
+  .text p{
+    line-height: normal;
+    font-size: 9px;
+  }
+  .text a{
+    font-size: 8px;
+  }
+  .main-text h2{
+    position: relative;
+    font-size: 30px;
+    left: 30px;
+  }
+  .box2{
+    position: relative;
+   padding-right: 10px;
+   right: 100%;
+   margin-right: 80px;
+  }
+}
+@media screen and (max-width: 768px){
+    .main-text{
+        font-size: 1px;
+}
+
+}
+@media screen and (max-width: 1440px){
+    .main-text{
+        font-size: 17px;
+}
+.box3{
+    bottom: 420px;
+}
+.box2{
+    bottom: 330;
+}
+@media screen and (max-width: 1024px){
+    .main-text{
+        font-size: 12px;
+}
+
+}
+
+}
